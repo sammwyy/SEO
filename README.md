@@ -30,6 +30,11 @@ Basic and essentials tooltips for Search Engine Optimization
   - [Website Speed](#website-speed)
   - [404 Error](#404-error)
   - [HTTP Status](#http-status)
+- [Crawlers](#crawlers)
+ - [Robots.txt](#robots.txt)
+ - [Structured Data](#structured-data)
+ - [Index your website](#index-your-website)
+ - [Sitemaps](#sitemaps)
 
 ## Introduction
 SEO or "Search Engine Optimization" is a practice that aims to position our website at the top of the search results of any search engine (especially google)  
@@ -261,3 +266,77 @@ For example, if you want to redirect www.example.com to just example.com, you mu
 
 in turn, the internal errors using the 500 code, the request errors with the 400 and the correct requests with the 200.  
 
+## Crawlers
+Crawlers or robots are small programs that are responsible for collecting information from websites for various purposes.  
+  
+Google has a bot that allows us to obtain data for the correct indexing of our website and there are many ways to help this bot.
+
+#### Robots.txt
+Robots txt is a file that we should have on our web server, so google robots will go to that file to take their configuration and not use the predefined one.  
+
+In this file we can index specific urls or create urls that are not going to be indexed.  
+ 
+Even if we do not use this file, it is considered good practice to create it and set this default configuration:  
+```
+User-agent: *
+Disallow:
+```
+
+And if we have a RestAPI on our website that users should not access but is used for backend purposes, we can use this configuration:
+```
+User-agent: *
+Disallow: /api/
+```
+
+The file must be created with the name robots.txt in the root directory of the website, for example:  
+https://2lstudios.dev/robots.txt or https://disney.com/robots.txt
+
+#### Structured Data
+The data structuring allows to help the google bot to have more information from our website to give a preview or widget in the search results.
+
+For example:  
+<img src="https://developers.google.com/search/docs/data-types/images/recipe02.png" width="50%">
+<img src="https://lh3.googleusercontent.com/IuoQrJBjUNsrOHmuHAQ99ehEiX6zCR2NZLl_2wZFkUkSjyotostXtkc2uIqDQgbieEI=w675" width="50%">
+
+More info at [developers.google.com](https://developers.google.com/search/docs/guides/intro-structured-data) 
+
+#### Index your website
+You can index your website on google manually by visiting the [Google Search Console](https://search.google.com/search-console/).  
+  
+In this panel you can also upload a sitemap that we will see below.
+
+#### Sitemaps
+Sitemap is a way that google has to structure the different links to your website with a certain order of priority and which ones will be indexed and which ones will not.  
+  
+the most common is to create a sitemap.xml file in the root of your website and send that link to google.  
+a sitemap looks like this:
+```xml
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://2lstudios.dev/</loc>
+    <lastmod>2020-08-10T20:40:50+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  
+  <url>
+    <loc>https://2lstudios.dev/projects</loc>
+    <lastmod>2020-08-10T20:40:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://2lstudios.dev/team</loc>
+    <lastmod>2020-08-10T20:40:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
+  <url>
+    <loc>https://2lstudios.dev/community</loc>
+    <lastmod>2020-08-10T20:40:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
+```
+
+This tool will generate a sitemap.xml automatically by scanning your website: [xml-sitemaps.com](https://www.xml-sitemaps.com/)

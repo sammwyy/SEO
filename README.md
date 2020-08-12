@@ -66,3 +66,14 @@ This metadata is not important and it does not have much relevance in SEO but th
 <meta name="author" content="Sammwy">
 ```
 [Source "moz.com"](https://moz.com/learn/seo/)
+
+### Content
+The content of your website is quite important since it is not only content that the user will qualify to continue visiting your page or not, but it also influences the search results a lot.  
+
+Make sure to follow the following rules:  
+- Have an <h1> (No more, no less)  
+- Make sure your unique <h1> tag is at least 20 characters long.  
+- Have a minimum of 250 words on your website (1000 is recommended)  
+- Add the `rel="no-follow external"` property to external links (i.e. `<a rel="no-follow external">`)  
+- Add alt property to images tags (i.e. `<img alt="icon" src="./assets/icon.jpg">`)  
+

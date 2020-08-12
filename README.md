@@ -5,6 +5,9 @@ Basic and essentials tooltips for Search Engine Optimization
 - [Introduction](#introduction)
 - [Metatags](#metatags)
 - [Content](#content)
+- [URL Optimization](#url-optimization)
+- [Responsive](#responsive)
+- [Website Speed](#website-speed)
 
 ## Introduction
 SEO or "Search Engine Optimization" is a practice that aims to position our website at the top of the search results of any search engine (especially google)  
@@ -67,7 +70,7 @@ This metadata is not important and it does not have much relevance in SEO but th
 ```
 [Source "moz.com"](https://moz.com/learn/seo/)
 
-### Content
+## Content
 The content of your website is quite important since it is not only content that the user will qualify to continue visiting your page or not, but it also influences the search results a lot.  
 
 Make sure to follow the following rules:  
@@ -76,4 +79,34 @@ Make sure to follow the following rules:
 - Have a minimum of 250 words on your website (1000 is recommended)  
 - Add the `rel="no-follow external"` property to external links (i.e. `<a rel="no-follow external">`)  
 - Add alt property to images tags (i.e. `<img alt="icon" src="./assets/icon.jpg">`)  
+
+## URL Optimization
+Here are some good practices to optimize your URLs  
+  
+- Avoid use urls like this:  
+https://sammwy.example.com/2020/12/08/10-best-animes-of-2020  
+
+- Use this instead: 
+https://sammwy.com/blog/best-animes-2020  
+
+- Avoid use http  
+- Avoid use subdomains  
+- Avoid use too long urls  
+- Avoid use urls ended with .php, .html, .asp, .jsp  
+
+## Responsive
+Some search engines (including google) reward responsive design with a higher position than a website that is not responsive for other devices.  
+  
+Useful links:  
+[Resonsive design tips](https://business.tutsplus.com/articles/quick-responsive-web-design-tips-tricks--cms-30684) | [Responsive design tricks](https://webflow.com/blog/responsive-web-design-tricks-and-tips)
+
+## Website Speed
+If your website is slow, not only will you ruin the user experience, but also the search engines will take longer to obtain details of your page which will position you lower in the search results.  
+
+Useful tricks:  
+- Use cache system (Example cloudflare)  
+- Minify your HTML, CSS and JS files  
+- Compress your images  
+- Avoid using too js and css imports (max 5 per each)  
+- Use lazy loading in your img tags
 

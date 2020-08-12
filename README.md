@@ -10,7 +10,13 @@ Basic and essentials tooltips for Search Engine Optimization
   - [Description](#description)
   - [keywords](#keywords)
   - [author](#author)
-- [Social Tags](#social-tags)
+- [OpenGraph](#opengraph)
+  - [OG Locale](#og-locale)
+  - [OG Type](#og-type)
+  - [OG Description](#og-description)
+  - [OG URL](#og-url)
+  - [OG Image](#og-image)
+  - [OG Title](#og-title)
 - [Website and Server](#webiste-and-server)
   - [Content](#content)
   - [URL Optimization](#url-optimization)
@@ -80,11 +86,45 @@ This metadata is not important and it does not have much relevance in SEO but th
 ```
 [Source "moz.com"](https://moz.com/learn/seo/)
 
+## OpenGraph
+Opengraph is a web protocol that allows you to create rich structured objects to get more detailed information about a website. Facebook uses opengraph for posts that contain a link to your website so if you want to promote your website on facebook, you need to use the opengraph tags.  
 
-## Social Tags
-With social tags I refer to meta tags that are specific to a social network or website such as twitter or facebook.
+#### OG Locale
+Allows you to specify the language of your website.  
+```html
+<meta property="og:locale" content="en_US" />
+```
 
+#### OG Type
+It allows you to specify the type of content that will be on your website and thus be able to display it in a specific way.  
+Available types: `apps.saves`, `article`, `book`, `books.author`, `books.genre`, `business.business`, `fitness.course`, `game.achievement`, `games.plays`, `games.saves`, `music.album`, `music.playlist`, `music.radio_station`, `music.song`, `news.publishes`, `og.follows`, `og.likes`, `pages.saves`, `place`, `product`, `product.group`, `product.item`, `profile`, `restaurant.menu`, `restaurant.menu_item`, `restaurant.menu_section`, `restaurant.restaurant`, `restaurant.visited`, `restaurant.wants_to_visit`, `sellers.rates`, `video.episode`, `video.movie`, `video.other`, `video.tv_show`, `video.wants_to_watch`, `website`
+```html
+<meta property="og:type" content="article" />
+```
 
+#### OG Description
+Description of your article or website.
+```html
+<meta property="og:description" content="This is the description of my website or article" />
+```
+
+#### OG Url
+Url of your article or website
+```html
+<meta property="og:url" content="https://example.com/article" />
+```
+
+#### OG Image
+Image banner of your article or website
+```html
+<meta property="og:image" content="https://example.com/assets/image.jpg" />
+```
+
+#### OG Title
+Title of your article or website
+```html
+<meta property="og:title" content="My Article" />
+```
 
 ## Website and Server
 It is important that you have your website and server fairly tidy.  

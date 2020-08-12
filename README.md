@@ -31,10 +31,11 @@ Basic and essentials tooltips for Search Engine Optimization
   - [404 Error](#404-error)
   - [HTTP Status](#http-status)
 - [Crawlers](#crawlers)
- - [Robots.txt](#robots.txt)
- - [Structured Data](#structured-data)
- - [Index your website](#index-your-website)
- - [Sitemaps](#sitemaps)
+  - [Robots.txt](#robots.txt)
+  - [Structured Data](#structured-data)
+  - [Index your website](#index-your-website)
+  - [Sitemaps](#sitemaps)
+- [Tools](#tools)
 
 ## Introduction
 SEO or "Search Engine Optimization" is a practice that aims to position our website at the top of the search results of any search engine (especially google)  
@@ -106,6 +107,8 @@ Allows you to specify the language of your website.
 <meta property="og:locale" content="en_US" />
 ```
 
+<hr>
+
 #### OG Type
 It allows you to specify the type of content that will be on your website and thus be able to display it in a specific way.  
 Available types: `apps.saves`, `article`, `book`, `books.author`, `books.genre`, `business.business`, `fitness.course`, `game.achievement`, `games.plays`, `games.saves`, `music.album`, `music.playlist`, `music.radio_station`, `music.song`, `news.publishes`, `og.follows`, `og.likes`, `pages.saves`, `place`, `product`, `product.group`, `product.item`, `profile`, `restaurant.menu`, `restaurant.menu_item`, `restaurant.menu_section`, `restaurant.restaurant`, `restaurant.visited`, `restaurant.wants_to_visit`, `sellers.rates`, `video.episode`, `video.movie`, `video.other`, `video.tv_show`, `video.wants_to_watch`, `website`
@@ -113,11 +116,15 @@ Available types: `apps.saves`, `article`, `book`, `books.author`, `books.genre`,
 <meta property="og:type" content="article" />
 ```
 
+<hr>
+
 #### OG Description
 Description of your article or website.
 ```html
 <meta property="og:description" content="This is the description of my website or article" />
 ```
+
+<hr>
 
 #### OG Url
 Url of your article or website
@@ -125,17 +132,23 @@ Url of your article or website
 <meta property="og:url" content="https://example.com/article" />
 ```
 
+<hr>
+
 #### OG Image
 Image banner of your article or website
 ```html
 <meta property="og:image" content="https://example.com/assets/image.jpg" />
 ```
 
+<hr>
+
 #### OG Title
 Title of your article or website
 ```html
 <meta property="og:title" content="My Article" />
 ```
+
+<hr>
 
 ## Twitter
 Just like facebook uses opengraph, twitter uses its own metadata system which in turn uses its own meta tags.
@@ -161,11 +174,15 @@ Samples:
 **Player**  
 <img src="http://www.oncrawl.com/wp-content/uploads/2016/01/soundcloud-player-gweek.png"  width="50%">
 
+<hr>
+
 #### Twitter Url
 Canonical url of your card article
 ```html
 <meta name="twitter:url" content="https://website.com/mycard">
 ```
+
+<hr>
 
 #### Twitter Title
 Title for your card
@@ -173,11 +190,15 @@ Title for your card
 <meta name="twitter:title" content="This is my card">
 ```
 
+<hr>
+
 #### Twitter Description
 Description for your card
 ```html
 <meta name="twitter:description" content="Twitter's new Twitter Cards API allows developers to add META tags to their website, and Twitter will build card content from links to a given site.">
 ```
+
+<hr>
 
 #### Twitter Image
 Banner image for your card
@@ -187,6 +208,8 @@ Banner image for your card
 
 [Source 1: oncrawl.com](https://www.oncrawl.com/oncrawl-seo-thoughts/a-complete-guide-to-twitter-cards/)
 [Source 2: neilpatel.com](https://neilpatel.com/blog/open-graph-meta-tags/)
+
+<hr>
 
 ## Website and Server
 It is important that you have your website and server fairly tidy.  
@@ -266,6 +289,8 @@ For example, if you want to redirect www.example.com to just example.com, you mu
 
 in turn, the internal errors using the 500 code, the request errors with the 400 and the correct requests with the 200.  
 
+<hr>
+
 ## Crawlers
 Crawlers or robots are small programs that are responsible for collecting information from websites for various purposes.  
   
@@ -291,6 +316,8 @@ Disallow: /api/
 The file must be created with the name robots.txt in the root directory of the website, for example:  
 https://2lstudios.dev/robots.txt or https://disney.com/robots.txt
 
+<hr>
+
 #### Structured Data
 The data structuring allows to help the google bot to have more information from our website to give a preview or widget in the search results.
 
@@ -300,10 +327,14 @@ For example:
 
 More info at [developers.google.com](https://developers.google.com/search/docs/guides/intro-structured-data) 
 
+<hr>
+
 #### Index your website
 You can index your website on google manually by visiting the [Google Search Console](https://search.google.com/search-console/).  
   
 In this panel you can also upload a sitemap that we will see below.
+
+<hr>
 
 #### Sitemaps
 Sitemap is a way that google has to structure the different links to your website with a certain order of priority and which ones will be indexed and which ones will not.  
@@ -340,3 +371,27 @@ a sitemap looks like this:
 ```
 
 This tool will generate a sitemap.xml automatically by scanning your website: [xml-sitemaps.com](https://www.xml-sitemaps.com/)
+
+## Tools
+Here are some tools to evaluate the SEO of your website and others useful things.  
+
+**SEO**  
+- [seotesteronline.com](https://www.seotesteronline.com/)  
+- [seositecheckup.com](https://seositecheckup.com/)  
+- [seotesteronline.com](https://www.seotesteronline.com/seo-checker/)    
+- [seobility.net](https://www.seobility.net/en/seocheck/)    
+- [neilpatel.com](https://neilpatel.com/seo-analyzer/)  
+
+**Twitter cards Generators**  
+- [smallseotools.com](https://smallseotools.com/twitter-card-generator/)  
+- [freecodetools.org](https://freecodetools.org/twitter-card-generator/)  
+
+**Sitemap Generators**  
+- [xml-sitemaps.com](https://www.xml-sitemaps.com/)  
+- [sitemapgenie.com](https://www.sitemapgenie.com/)  
+- [xmlsitemapgenerator.org](https://xmlsitemapgenerator.org/)  
+
+**Robots.txt Generators**  
+- [smallseotools.com](https://smallseotools.com/robots-txt-generator/)  
+- [tools.seobook.com](http://tools.seobook.com/robots-txt/generator/)  
+- [seoptimer.com](https://www.seoptimer.com/robots-txt-generator)  

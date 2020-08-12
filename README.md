@@ -17,6 +17,7 @@ Basic and essentials tooltips for Search Engine Optimization
   - [OG URL](#og-url)
   - [OG Image](#og-image)
   - [OG Title](#og-title)
+- [Twitter](#twitter)
 - [Website and Server](#webiste-and-server)
   - [Content](#content)
   - [URL Optimization](#url-optimization)
@@ -125,6 +126,58 @@ Title of your article or website
 ```html
 <meta property="og:title" content="My Article" />
 ```
+
+## Twitter
+Just like facebook uses opengraph, twitter uses its own metadata system which in turn uses its own meta tags.
+
+#### Twitter Card
+allows you to create a twitter letter, this will make the links to your website in the tweets look more elegant. In turn, this works as an opengraph type to which you must specify the type of letter you want:  
+
+Available types: `summary`, `summary_large_image`, `app`, `player`
+```html
+<meta name="twitter:card" content="summary">
+```
+
+Samples:  
+**Summary**
+<img src="https://i.imgur.com/ap9xFzx.png">
+
+**Summary large image**
+<img src="https://i.imgur.com/44f6OY2.png">
+
+
+**App**
+<img src="https://i.imgur.com/ZsVU5hj.png">
+
+**Player**
+<img src="http://www.oncrawl.com/wp-content/uploads/2016/01/soundcloud-player-gweek.png">
+
+#### Url
+Canonical url of your card article
+```html
+<meta name="twitter:url" content="https://website.com/mycard">
+```
+
+#### Title
+Title for your card
+```html
+<meta name="twitter:title" content="This is my card">
+```
+
+#### Description
+Description for your card
+```html
+<meta name="twitter:description" content="Twitter's new Twitter Cards API allows developers to add META tags to their website, and Twitter will build card content from links to a given site.">
+```
+
+#### Image
+Banner image for your card
+```html
+<meta name="twitter:image" content="https://davidwalsh.name/wp-content/themes/punky/images/logo.png">
+```
+
+[Source 1: oncrawl.com](https://www.oncrawl.com/oncrawl-seo-thoughts/a-complete-guide-to-twitter-cards/)
+[Source 2: neilpatel.com](https://neilpatel.com/blog/open-graph-meta-tags/)
 
 ## Website and Server
 It is important that you have your website and server fairly tidy.  

@@ -18,6 +18,11 @@ Basic and essentials tooltips for Search Engine Optimization
   - [OG Image](#og-image)
   - [OG Title](#og-title)
 - [Twitter](#twitter)
+  - [Twitter Card](#twitter-card)
+  - [Twitter URL](#twitter-url)
+  - [Twitter Tittle](#twitter-title)
+  - [Twitter Description](#twitter-description)
+  - [Twitter Image](#twitter-image)
 - [Website and Server](#webiste-and-server)
   - [Content](#content)
   - [URL Optimization](#url-optimization)
@@ -139,38 +144,37 @@ Available types: `summary`, `summary_large_image`, `app`, `player`
 ```
 
 Samples:  
-**Summary**
-<img src="https://i.imgur.com/ap9xFzx.png">
+**Summary**  
+<img src="https://i.imgur.com/ap9xFzx.png" width="50%">
 
-**Summary large image**
-<img src="https://i.imgur.com/44f6OY2.png">
+**Summary large image**  
+<img src="https://i.imgur.com/44f6OY2.png" width="50%">
 
+**App**  
+<img src="https://i.imgur.com/ZsVU5hj.png" width="50%">
 
-**App**
-<img src="https://i.imgur.com/ZsVU5hj.png">
+**Player**  
+<img src="http://www.oncrawl.com/wp-content/uploads/2016/01/soundcloud-player-gweek.png"  width="50%">
 
-**Player**
-<img src="http://www.oncrawl.com/wp-content/uploads/2016/01/soundcloud-player-gweek.png">
-
-#### Url
+#### Twitter Url
 Canonical url of your card article
 ```html
 <meta name="twitter:url" content="https://website.com/mycard">
 ```
 
-#### Title
+#### Twitter Title
 Title for your card
 ```html
 <meta name="twitter:title" content="This is my card">
 ```
 
-#### Description
+#### Twitter Description
 Description for your card
 ```html
 <meta name="twitter:description" content="Twitter's new Twitter Cards API allows developers to add META tags to their website, and Twitter will build card content from links to a given site.">
 ```
 
-#### Image
+#### Twitter Image
 Banner image for your card
 ```html
 <meta name="twitter:image" content="https://davidwalsh.name/wp-content/themes/punky/images/logo.png">
